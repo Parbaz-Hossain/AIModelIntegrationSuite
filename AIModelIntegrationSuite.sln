@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIModelIntegration.Ollama",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIModelIntegration.OpenAI", "AIModelIntegration.OpenAI\AIModelIntegration.OpenAI.csproj", "{DE67E65C-3595-4BA7-B892-73FD0396F5E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIModelIntegration.KnowledgeBaseAI", "AIModelIntegration.KnowledgeBaseAI\AIModelIntegration.KnowledgeBaseAI.csproj", "{A927C42D-502D-4548-A255-03350946AD32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DE67E65C-3595-4BA7-B892-73FD0396F5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE67E65C-3595-4BA7-B892-73FD0396F5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE67E65C-3595-4BA7-B892-73FD0396F5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A927C42D-502D-4548-A255-03350946AD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A927C42D-502D-4548-A255-03350946AD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A927C42D-502D-4548-A255-03350946AD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A927C42D-502D-4548-A255-03350946AD32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

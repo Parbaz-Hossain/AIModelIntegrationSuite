@@ -1,0 +1,6 @@
+@AIModelIntegration.KnowledgeBaseAI_HostAddress = http://localhost:5244
+
+GET {{AIModelIntegration.KnowledgeBaseAI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

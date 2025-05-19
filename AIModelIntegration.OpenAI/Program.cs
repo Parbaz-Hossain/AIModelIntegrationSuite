@@ -4,10 +4,11 @@ Console.Title = "OpenAI Chat Client 🤖";
 
 ChatClient chatClient = new(
    model: "gpt-4o-mini",
-   apiKey: Environment.GetEnvironmentVariable("OpenAI_API_Key"));
+   apiKey: Environment.GetEnvironmentVariable("OPENAI_API_KEY"));
 
 while (true)
 {
+    Console.WriteLine("============================================");
     Console.WriteLine("Enter your message (or type 'exit' to quit):");
 
     var userPrompt = Console.ReadLine();
