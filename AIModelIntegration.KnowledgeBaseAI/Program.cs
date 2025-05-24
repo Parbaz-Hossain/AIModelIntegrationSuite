@@ -1,6 +1,23 @@
+using AIModelIntegration.KnowledgeBaseAI.Contexts;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Win32;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<SourceDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MSSQLConnection"));
+});
+
+builder.Services.AddDbContext<DestinationDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQLConnection"));
+});
+
+// Register IHttpClientFactory
+builder.Services.AddHttpClient();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
